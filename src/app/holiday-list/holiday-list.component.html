@@ -1,0 +1,6 @@
+
+<ul>
+  <li *ngFor = "let holiday of holidayList">
+    <a [routerLink]="['/detail/',  holiday.date, holiday.name]"><span class="badge badge-secondary">{{ holiday.date }}</span> {{ holiday.name }}</a>
+    </li>
+</ul>
